@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5efe6;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding:1rem;
+    font-family: sans-serif;
+}
+.container{
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    width:100%;
+    max-width: 600px;
+    overflow:hidden;
+    position: relative;
+
+}
+.screen{
+   display:none;
+   padding:2rem;
+   text-align: center;
+}
+.screen.active{
+  display:block;
+}
+#start-screen h1{
+    color:#e86a33;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+
+}
+#start-screen p{
+    color:#333;
+    margin-bottom:30px;
+    font-size:1.1rem;
+
+}
+.quizheader{
+    margin-bottom: 1rem;
+}
+#question-text{
+    color:#333;
+    justify-content: center;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+   
+}
+.quiz-info{
+    display:flex;
+    justify-content: space-between;
+    color:#666;
+    margin-bottom: 10px;
+}
+.answers-container{
+ display:flex;
+ flex-direction: column;
+ gap:10px;
+ margin-bottom: 25px;
+}
+.answer-btn{
+    background-color: #f8f0e5;
+    color:#333;
+    cursor: pointer;
+    border:2px solid #eadbc8;
+    text-align: left;
+    border-radius: 10px;
+    padding:1rem;
+    border:2px;
+}
+.answer-btn:hover{
+    background-color:#eadbc8 ;
+    border-color: #d4ac78;
+}
+
+.answer-btn.correct{
+    background-color: rgb(96, 181, 96);
+    border-color: rgb(210, 228, 210);
+    color:rgb(41, 42, 41);
+}
+.answer-btn.incorrect{
+    background-color:red;
+    border-color: rgb(210, 228, 210);
+    color:rgb(41, 42, 41);
+
+}
+.progress-bar{
+    height:10px;
+    background-color: bisque;
+    border-radius: 5px;
+    overflow:hidden;
+    margin-top: 20px;
+}
+.progress{
+    height:100%;
+    width:0%;
+    background-color: #e86a33;
+    transition:width 0.3s ease;
+}
+#result-screen h1{
+    color:#e86a33;
+    margin-bottom:5px;
+}
+.result-info{
+    background-color: #d4ac78;
+    border-radius: 10px;
+    padding:20px;
+    margin-bottom: 30px;
+
+}
+.result-info p{
+ color:rgb(51, 50, 50);
+ font-size:1.2rem;
+ margin-bottom: 1rem;
+}
+
+.result-info h2{
+    color:#f16327;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+button{
+    cursor:pointer;
+    background-color: #e86a33;
+    border:none;
+    border-radius: 10px;
+    color:white;
+    padding:15px 30px;
+    font-size:1.1rem;
+}
+button:hover{
+    background-color: #d45924;
+}
